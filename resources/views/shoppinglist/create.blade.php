@@ -18,17 +18,87 @@
                         </ul>
                     @endif
                     <div class="form-group row">
-                        <label class="col-md-2">タイトル</label>
+                        <label class="col-md-2">品名</label>
                         <div class="col-md-10">
-                            <input type="text" name="title" size="30" value="{{ old('title') }}"></input>
+                            <input type="text" name="title" size="25" value="{{ old('title') }}"></input>
                         </div>
                     </div>
+
                     <div class="form-group row">
-                        <label class="col-md-2">本文</label>
+                        <label class="col-md-2">金額</label>
                         <div class="col-md-10">
-                            <textarea name="contents" style="width:500px; height:200px;" value="{{ old('contents') }}"></textarea>
+                            <input type="text" name="title" size="10" value="{{ old('title') }}"></input>
                         </div>
                     </div>
+
+                    <div class="form-group row">
+                        <label class="col-md-2">品数</label>
+                        <div class="col-sm-10">
+                            　<select name="num">
+                               <option value="">選択してください</option>
+                               <option value="1">1</option>
+                               <option value="2">2</option>
+                               <option value="3">3</option>
+                               <option value="4">4</option>
+                               <option value="5">5</option>
+                               <option value="6">6</option>
+                               <option value="7">7</option>
+                               <option value="8">8</option>
+                               <option value="9">9</option>
+                               <option value="10以上">10以上</option>
+                              </select>
+                        </div>
+                    </div>
+
+　　　　　　　　　　　　<div class="form-group row">
+                        <label class="col-md-2">合計金額</label>
+                        <div class="col-md-10">
+                            <input type="text" name="title" size="10" value="{{ old('title') }}"></input>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-md-2">分類</label>
+                        <div class="col-sm-10">
+                            　<select name="division">
+                               <option value="">選択してください</option>
+                               <option value="米、パン類">米、パン類</option>
+                               <option value="野菜類">野菜類</option>
+                               <option value="果物類">果物類</option>
+                               <option value="肉類">肉類</option>
+                               <option value="魚介類">魚介類</option>
+                               <option value="卵、豆類">卵、豆類</option>
+                               <option value="乳製品">乳製品</option>
+                               <option value="飲料">飲料</option>
+                               <option value="嗜好品">嗜好品</option>
+                               <option value="その他">その他</option>
+                              </select>
+                        </div>
+                    </div>
+　　　　　　　　　　　　
+　　　　　　　　　　　　<div class="form-group row">
+                        <label class="col-md-2">購入先</label>
+                      <div class="col-md-10">
+                        <input type="checkbox" name=“shop” value="1">スーパー
+                        <input type="checkbox" name=“shop” value="2">ドラッグストア
+                        <input type="checkbox" name=“shop” value="3">ネットスーパー
+                      </div>
+                    </div>
+
+　　　　　　　　　　　　<div class="form-group row">
+                        <label class="col-md-2">お気に入り</label>
+                      <div class="col-md-10">
+                        <input type="checkbox" name=“お気に入り”>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-md-2">メモ</label>
+                        <div class="col-md-10">
+                            <textarea name="contents" style="width:400px; height:70px;" value="{{ old('contents') }}"></textarea>
+                        </div>
+                    </div>
+
                     <div class="form-group row">
                         <label class="col-md-2">画像</label>
                         <div class="col-md-10">
